@@ -10,5 +10,5 @@ def test_demo_baidu(page: Page):
     search_input.wait_for(state="visible", timeout=10000)
     search_input.fill("自动化")
 
-    page.get_by_role("button", name="百度一下，").click()
+    page.get_by_role("button", name="百度一下").click()
     page.wait_for_timeout(2000)
