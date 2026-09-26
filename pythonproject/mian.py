@@ -14,6 +14,15 @@ ALLURE_RESULTS = os.path.join(report_path, "allure-results")
 ALLURE_REPORT = os.path.join(report_path, "allure-report")
 
 # =================================================
+def create_read_index():
+    filename = os.path.join(report_path, 'index.bat')
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    with open(filename, 'w') as f:
+        f.write('''@echo off
+allure open -h 127.0.0.1 -p 8083 allure-report
+start chrome http://127.0.0.1:8083
+pause''')
+    print(f"✅ 创建bat文件完成\n")
 
 def creat_files_report():
     os.makedirs(report_path, exist_ok=True)
@@ -36,6 +45,7 @@ def run_pytest(pytest_args: list, round_num: int) -> int:
     junit_xml = os.path.join(report_path, f"result_{round_num}.xml")
     cmd = [
         "pytest",
+        "-m", "smoke",
         "--html", html_report,
         "--junitxml", junit_xml,
         "--alluredir", ALLURE_RESULTS   # 每一轮pytest都输出到同一个allure‑results，自动追加
@@ -88,6 +98,8 @@ def generate_allure_final_report():
 
 if __name__ == "__main__":
     creat_files_report()
+    create_read_index()
+
     # 清除pytest缓存
     run_pytest(["--cache-clear"], round_num=0)
 
