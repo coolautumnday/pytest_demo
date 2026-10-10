@@ -1,7 +1,7 @@
 import sqlite3
 
 def test_delete_data():
-    with sqlite3.connect('../SQtest.db') as conn:
+    with sqlite3.connect('./SQtest.db') as conn:
         cur = conn.cursor()
         try:
             cur.execute("DELETE FROM testcase where name have '修改’")

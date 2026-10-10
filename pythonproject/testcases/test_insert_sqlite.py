@@ -2,7 +2,7 @@ import sqlite3
 import random
 import time
 
-conn = sqlite3.connect('../SQtest.db')
+conn = sqlite3.connect('./SQtest.db')
 
 c = conn.cursor()
 
@@ -29,7 +29,7 @@ def test_insert_date():
     sql = """INSERT INTO testcase (name, age, sex, create_time) VALUES (?, ?, ?, ?)"""
 
     try:
-        with sqlite3.connect('../SQtest.db', timeout=10) as connet:
+        with sqlite3.connect('./SQtest.db', timeout=10) as connet:
             con = connet.cursor()
             con.executemany(sql, test_insert_list)
             connet.commit()

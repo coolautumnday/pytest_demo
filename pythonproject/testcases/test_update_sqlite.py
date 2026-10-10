@@ -5,7 +5,7 @@ import pytest
 
 @pytest.mark.parametrize("new_name, new_age, uid", [('修改名字', 19, 1)])
 def test_update_date(new_name, new_age, uid):
-    with sqlite3.connect('../SQtest.db') as conn:
+    with sqlite3.connect('./SQtest.db') as conn:
         cur = conn.cursor()
         sql = "UPDATE testcase SET name=?,age=?, create_time=? WHERE id=?"
         try:

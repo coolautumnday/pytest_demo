@@ -1,7 +1,7 @@
 import sqlite3
 
 def test_get_all_data():
-    with sqlite3.connect('../SQtest.db') as conn:
+    with sqlite3.connect('./SQtest.db') as conn:
         cur = conn.cursor()
         cur.execute("SELECT * FROM testcase")
         res = cur.fetchall()
