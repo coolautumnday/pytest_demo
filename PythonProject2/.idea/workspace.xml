@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80bd30f4-88bc-4d01-906d-1cc32025cc31" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../pythonproject/testcases/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonproject/testcases/simple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonproject/testcases/test_llm_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonproject/mian.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonproject/mian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonproject/testcase/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonproject/testcase/locustfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonproject/testcases/locustfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonproject/testcase/simple.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonproject/testcase/test_demo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonproject/testcase/test_demo2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonproject/testcase/test_demo3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonproject/testcase/test_demo3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonproject/testcase/test_llm_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonproject/testcase/test_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonproject/testcases/test_requests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +16,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../gitdome1" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;coolautumnday&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/coolautumnday/pytest_demo.git&quot;,
+    &quot;accountId&quot;: &quot;22781cba-0dc2-4ab8-9fa3-be85e1b21c71&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -40,31 +43,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\gitdome1\PythonProject2" />
+      <recent name="D:\gitdome1\PythonProject2\backend" />
+      <recent name="D:\gitdome1\PythonProject2\frontend" />
       <recent name="D:\gitdome1" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-PY-252.28539.90" />
         <option value="bundled-python-sdk-116fdca60d1a-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28539.90" />
       </set>
     </attachedChunks>
@@ -76,11 +81,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1790326936283</updated>
-      <workItem from="1790326937290" duration="14447000" />
+      <workItem from="1790326937290" duration="16547000" />
+      <workItem from="1790559892326" duration="53613000" />
+      <workItem from="1790750610557" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
