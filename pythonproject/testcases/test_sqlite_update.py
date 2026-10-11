@@ -7,7 +7,7 @@ import pytest
 def test_update_date(new_name, new_age, uid):
     with sqlite3.connect('./SQtest.db') as conn:
         cur = conn.cursor()
-        sql = "UPDATE testcase SET name=?,age=?, create_time=? WHERE id=?"
+        sql = "UPDATE personnel SET name=?,age=?, create_time=? WHERE id=?"
         try:
             update_time= time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
             cur.execute(sql, (new_name, new_age, update_time, uid))
