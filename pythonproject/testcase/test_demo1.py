@@ -2,6 +2,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 @pytest.mark.smoke
+@pytest.mark.no_browser
 def test_demo_baidu(page: Page):
     page.goto("https://www.baidu.com")
     page.wait_for_load_state("networkidle")

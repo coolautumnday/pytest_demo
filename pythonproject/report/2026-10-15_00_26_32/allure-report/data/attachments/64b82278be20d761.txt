@@ -1,0 +1,2 @@
+INFO     root:SauceDemo_aw.py:47 输入成功：standard_user
+INFO     root:SauceDemo_aw.py:47 输入成功：secret_sauce

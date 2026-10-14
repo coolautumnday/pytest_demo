@@ -1,4 +1,0 @@
-@echo off
-allure open -h 127.0.0.1 -p 8083 allure-report
-start chrome http://127.0.0.1:8083
-pause

@@ -1,5 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","5538","test_demo_baidu[chromium]","testcase","2026-09-18","passed","2026-09-18","","test_demo3","",""
-"","1135","test_demo1","testcase","2026-09-18","passed","2026-09-18","","test_requests","",""
-"","6028","test_demo_baidu[chromium]","testcase","2026-09-18","passed","2026-09-18","","test_demo1","",""
-"","33314","test_demo_baidu[chromium]","testcase","2026-09-18","broken","2026-09-18","","test_demo2","",""
