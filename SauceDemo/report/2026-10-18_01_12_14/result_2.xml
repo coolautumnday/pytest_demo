@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="5.837" timestamp="2026-10-18T01:12:46.471263+08:00" hostname="LAPTOP-U9LJGJ5P"><testcase classname="testcase.test_LG_05" name="test_lg_01[chromium]" time="5.287"><failure message="playwright._impl._errors.Error: Locator.click: Error: strict mode violation: get_by_role(&quot;button&quot;, name=&quot;Add to cart&quot;) resolved to 6 elements:&#10;    1) &lt;button id=&quot;add-to-cart-sauce-labs-backpack&quot; name=&quot;add-to-cart-sauce-labs-backpack&quot; data-test=&quot;add-to-cart-sauce-labs-backpack&quot; class=&quot;btn btn_primary btn_small btn_inventory &quot;&gt;Add to cart&lt;/button&gt; aka locator(&quot;[data-test=\&quot;add-to-cart-sauce-labs-backpack\&quot;]&quot;)&#10;    2) &lt;button id=&quot;add-to-cart-sauce-labs-bike-light&quot; name=&quot;add-to-cart-sauce-labs-bike-light&quot; data-test=&quot;add-to-cart-sauce-labs-bike-light&quot; class=&quot;btn btn_primary btn_small btn_inventory &quot;&gt;Add to cart&lt;/button&gt; aka locator(&quot;[data-test=\&quot;add-to-cart-sauce-labs-bike-light\&quot;]&quot;)&#10;    3) &lt;button id=&quot;add-to-cart-sauce-labs-bolt-t-shirt&quot; name=&quot;add-to-cart-sauce-labs-bolt-t-shirt&quot; data-test=&quot;add-to-cart-sauce-labs-bolt-t-shirt&quot; class=&quot;btn btn_primary btn_small btn_inventory &quot;&gt;Add to cart&lt;/button&gt; aka locator(&quot;[data-test=\&quot;add-to-cart-sauce-labs-bolt-t-shirt\&quot;]&quot;)&#10;    4) &lt;button id=&quot;add-to-cart-sauce-labs-fleece-jacket&quot; name=&quot;add-to-cart-sauce-labs-fleece-jacket&quot; class=&quot;btn btn_primary btn_small btn_inventory &quot; data-test=&quot;add-to-cart-sauce-labs-fleece-jacket&quot;&gt;Add to cart&lt;/button&gt; aka locator(&quot;[data-test=\&quot;add-to-cart-sauce-labs-fleece-jacket\&quot;]&quot;)&#10;    5) &lt;button id=&quot;add-to-cart-sauce-labs-onesie&quot; name=&quot;add-to-cart-sauce-labs-onesie&quot; data-test=&quot;add-to-cart-sauce-labs-onesie&quot; class=&quot;btn btn_primary btn_small btn_inventory &quot;&gt;Add to cart&lt;/button&gt; aka locator(&quot;[data-test=\&quot;add-to-cart-sauce-labs-onesie\&quot;]&quot;)&#10;    6) &lt;button class=&quot;btn btn_primary btn_small btn_inventory &quot; id=&quot;add-to-cart-test.allthethings()-t-shirt-(red)&quot; name=&quot;add-to-cart-test.allthethings()-t-shirt-(red)&quot; data-test=&quot;add-to-cart-test.allthethings()-t-shirt-(red)&quot;&gt;Add to cart&lt;/button&gt; aka locator(&quot;[data-test=\&quot;add-to-cart-test.allthethings()-t-shirt-(red)\&quot;]&quot;)&#10;&#10;Call log:&#10;  - waiting for get_by_role(&quot;button&quot;, name=&quot;Add to cart&quot;)">page_start = &lt;function page_start.&lt;locals&gt;._get_pa at 0x0000022246B11C70&gt;
+
+    def test_lg_01(page_start):
+        url = Const.url
+        page, pa = page_start(url)
+    
+        logging.info('预置条件')
+        pa.check_text(title_page.type_name)
+    
+        # # 测试步骤
+        logging.info('输入账号密码')
+        pa.input_massage(user_name, Const.error_user)
+        pa.input_massage(pass_word, Const.password)
+    
+        logging.info('点击登录')
+        pa.find_ele(login_button).click()
+    
+        # # 预期结果
+        logging.info('检测页面文本是否出现')
+        pa.check_text(Const.successful_login_text)
+    
+        logging.info('点击添加购物车')
+        # pa.find_ele(add_to_cart).first.click()
+&gt;       pa.find_ele(add_to_cart).click()
+
+testcase\test_LG_05.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+D:\Program Files (x86)\python\Lib\site-packages\playwright\sync_api\_generated.py:17876: in click
+    self._sync(
+D:\Program Files (x86)\python\Lib\site-packages\playwright\_impl\_locator.py:165: in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Program Files (x86)\python\Lib\site-packages\playwright\_impl\_frame.py:593: in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+D:\Program Files (x86)\python\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x000002224674BB60&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x0000022246B131C0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.Error: Locator.click: Error: strict mode violation: get_by_role("button", name="Add to cart") resolved to 6 elements:
+E               1) &lt;button id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack" data-test="add-to-cart-sauce-labs-backpack" class="btn btn_primary btn_small btn_inventory "&gt;Add to cart&lt;/button&gt; aka locator("[data-test=\"add-to-cart-sauce-labs-backpack\"]")
+E               2) &lt;button id="add-to-cart-sauce-labs-bike-light" name="add-to-cart-sauce-labs-bike-light" data-test="add-to-cart-sauce-labs-bike-light" class="btn btn_primary btn_small btn_inventory "&gt;Add to cart&lt;/button&gt; aka locator("[data-test=\"add-to-cart-sauce-labs-bike-light\"]")
+E               3) &lt;button id="add-to-cart-sauce-labs-bolt-t-shirt" name="add-to-cart-sauce-labs-bolt-t-shirt" data-test="add-to-cart-sauce-labs-bolt-t-shirt" class="btn btn_primary btn_small btn_inventory "&gt;Add to cart&lt;/button&gt; aka locator("[data-test=\"add-to-cart-sauce-labs-bolt-t-shirt\"]")
+E               4) &lt;button id="add-to-cart-sauce-labs-fleece-jacket" name="add-to-cart-sauce-labs-fleece-jacket" class="btn btn_primary btn_small btn_inventory " data-test="add-to-cart-sauce-labs-fleece-jacket"&gt;Add to cart&lt;/button&gt; aka locator("[data-test=\"add-to-cart-sauce-labs-fleece-jacket\"]")
+E               5) &lt;button id="add-to-cart-sauce-labs-onesie" name="add-to-cart-sauce-labs-onesie" data-test="add-to-cart-sauce-labs-onesie" class="btn btn_primary btn_small btn_inventory "&gt;Add to cart&lt;/button&gt; aka locator("[data-test=\"add-to-cart-sauce-labs-onesie\"]")
+E               6) &lt;button class="btn btn_primary btn_small btn_inventory " id="add-to-cart-test.allthethings()-t-shirt-(red)" name="add-to-cart-test.allthethings()-t-shirt-(red)" data-test="add-to-cart-test.allthethings()-t-shirt-(red)"&gt;Add to cart&lt;/button&gt; aka locator("[data-test=\"add-to-cart-test.allthethings()-t-shirt-(red)\"]")
+E           
+E           Call log:
+E             - waiting for get_by_role("button", name="Add to cart")
+
+D:\Program Files (x86)\python\Lib\site-packages\playwright\_impl\_connection.py:632: Error</failure></testcase></testsuite></testsuites>

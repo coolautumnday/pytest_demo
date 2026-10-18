@@ -1,0 +1,7 @@
+INFO     root:test_LG_05.py:22 预置条件
+INFO     root:test_LG_05.py:26 输入账号密码
+INFO     root:business_aw.py:58 输入成功：error_user
+INFO     root:business_aw.py:58 输入成功：secret_sauce
+INFO     root:test_LG_05.py:30 点击登录
+INFO     root:test_LG_05.py:34 检测页面文本是否出现
+INFO     root:test_LG_05.py:37 点击添加购物车
