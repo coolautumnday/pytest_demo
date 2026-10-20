@@ -1,0 +1,7 @@
+INFO:root:确认已处于登录页面
+INFO:root:输入账号密码
+INFO:root:输入成功：standard_user
+INFO:root:输入成功：123456
+INFO:root:检测页面密码是否掩码
+INFO:root:确保密码有信息输入
+INFO:root:校验页面密码展示文本为空

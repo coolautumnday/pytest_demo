@@ -1,0 +1,9 @@
+INFO     root:test_LG_05.py:23 确认已处于登录页面
+INFO     root:test_LG_05.py:27 输入账号密码
+INFO     root:business_aw.py:64 输入成功：error_user
+INFO     root:business_aw.py:64 输入成功：secret_sauce
+INFO     root:test_LG_05.py:31 点击登录
+INFO     root:test_LG_05.py:35 检测页面是否出现成功登录后文本
+INFO     root:test_LG_05.py:38 点击添加购物车
+INFO     root:test_LG_05.py:41 点击Remove
+INFO     root:test_LG_05.py:46 校验remove button是否消失

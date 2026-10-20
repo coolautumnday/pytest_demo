@@ -1,0 +1,6 @@
+INFO:root:正常登录并处于登录状态
+INFO:root:输入成功：standard_user
+INFO:root:输入成功：secret_sauce
+INFO:root:找到页面第一个Add to cart并点击
+INFO:root:出现Remove
+INFO:root:Remove角标是否正确

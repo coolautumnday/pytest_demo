@@ -1,0 +1,8 @@
+INFO:root:确认已处于登录页面
+INFO:root:输入账号密码
+INFO:root:输入成功：performance_glitch_user
+INFO:root:输入成功：secret_sauce
+INFO:root:开始计时
+INFO:root:点击登录
+INFO:root:校验登录状态
+INFO:root:結束计时

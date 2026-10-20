@@ -1,0 +1,10 @@
+INFO     root:test_LG_06.py:24 确认已处于登录页面
+INFO     root:test_LG_06.py:28 输入账号密码
+INFO     root:business_aw.py:64 输入成功：visual_user
+INFO     root:business_aw.py:64 输入成功：secret_sauce
+INFO     root:test_LG_06.py:32 点击登录
+INFO     root:test_LG_06.py:36 检测页面是否出现成功登录后文本
+INFO     root:test_LG_06.py:39 页面UI布局展示错误
+INFO     root:business_aw.py:185 坐标裁剪截图已保存: ./tmp\ele_tmp.png
+INFO     root:test_LG_06.py:47 开始对比页面图片
+INFO     root:public_aw.py:234 两图对比值为28

@@ -1,0 +1,6 @@
+INFO     root:business_aw.py:72 正常登录并处于登录状态
+INFO     root:business_aw.py:64 输入成功：standard_user
+INFO     root:business_aw.py:64 输入成功：secret_sauce
+INFO     root:test_CT_01.py:24 找到页面第一个Add to cart并点击
+INFO     root:test_CT_01.py:30 出现Remove
+INFO     root:test_CT_01.py:33 Remove角标是否正确

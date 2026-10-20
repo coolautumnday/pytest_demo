@@ -1,0 +1,7 @@
+INFO:root:正常登录并处于登录状态
+INFO:root:输入成功：standard_user
+INFO:root:输入成功：secret_sauce
+INFO:root:检测页面是否出现打开菜单按钮
+INFO:root:刷新页面
+INFO:root:校验是否返回登录页面
+INFO:root:校验是否处于登陆后页面

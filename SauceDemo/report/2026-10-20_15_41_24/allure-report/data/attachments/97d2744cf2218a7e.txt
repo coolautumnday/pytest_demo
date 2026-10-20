@@ -1,0 +1,7 @@
+INFO     root:test_LG_15.py:24 确认已处于登录页面
+INFO     root:test_LG_15.py:28 输入账号密码
+INFO     root:business_aw.py:64 输入成功：standard_user
+INFO     root:business_aw.py:64 输入成功：123456
+INFO     root:test_LG_15.py:33 检测页面密码是否掩码
+INFO     root:test_LG_15.py:35 确保密码有信息输入
+INFO     root:test_LG_15.py:37 校验页面密码展示文本为空

@@ -1,0 +1,8 @@
+INFO     root:business_aw.py:72 正常登录并处于登录状态
+INFO     root:business_aw.py:64 输入成功：standard_user
+INFO     root:business_aw.py:64 输入成功：secret_sauce
+INFO     root:test_LG_16.py:26 检测页面是否出现打开菜单按钮
+INFO     root:test_LG_16.py:31 打开菜单
+INFO     root:test_LG_16.py:33 点击退出
+INFO     root:test_LG_16.py:39 校验是否返回登录页面
+INFO     root:test_LG_16.py:42 校验账号是否展示为空

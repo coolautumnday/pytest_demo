@@ -1,0 +1,3 @@
+INFO     root:test_LG_09.py:23 确认已处于登录页面
+INFO     root:test_LG_09.py:27 点击登录
+INFO     root:test_LG_09.py:31 检测页面提示文本是否出现

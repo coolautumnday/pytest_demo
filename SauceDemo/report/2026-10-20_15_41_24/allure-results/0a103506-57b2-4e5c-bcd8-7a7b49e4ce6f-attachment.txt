@@ -1,0 +1,5 @@
+INFO     root:test_LG_07.py:25 确认已处于登录页面
+INFO     root:test_LG_07.py:29 不输入账号，输入密码
+INFO     root:business_aw.py:64 输入成功：secret_sauce
+INFO     root:test_LG_07.py:32 点击登录
+INFO     root:test_LG_07.py:36 检测页面提示文本是否出现

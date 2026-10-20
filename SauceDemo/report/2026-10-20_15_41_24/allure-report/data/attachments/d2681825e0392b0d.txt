@@ -1,0 +1,7 @@
+INFO     root:test_LG_02.py:25 确认已处于登录页面
+INFO     root:test_LG_02.py:29 输入账号密码
+INFO     root:business_aw.py:64 输入成功：locked_out_user
+INFO     root:business_aw.py:64 输入成功：secret_sauce
+INFO     root:test_LG_02.py:33 点击登录
+INFO     root:test_LG_02.py:37 检测页面是否出现成功登录后文本
+INFO     root:test_LG_02.py:40 校验图片未加载

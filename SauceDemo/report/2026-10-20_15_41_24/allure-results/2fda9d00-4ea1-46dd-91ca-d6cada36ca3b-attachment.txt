@@ -1,0 +1,6 @@
+INFO:root:确认已处于登录页面
+INFO:root:输入账号密码
+INFO:root:输入成功：standard_user
+INFO:root:输入成功：error_user
+INFO:root:点击登录
+INFO:root:检测页面提示文本是否出现
